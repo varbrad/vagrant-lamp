@@ -10,6 +10,6 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "www/", "/var/www/html"
 
   # Shell bootstrap file
-  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "vagrant.sh"
 
 end
