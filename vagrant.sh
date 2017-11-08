@@ -37,3 +37,10 @@ sudo apt-get -y install git
 # install Composer
 curl -s https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+export NVM_DIR="$HOME/.nvm" # Make nvm usable now
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm install 8.9
